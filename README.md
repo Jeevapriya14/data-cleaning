@@ -45,5 +45,33 @@ df['GENDER'].value_counts()
 
 <img width="156" alt="image" src="https://github.com/Jeevapriya14/data-cleaning/assets/121003043/523afb48-2acf-4fca-b503-c1b35947a2a1">
 
+```
+mn=df.TOTAL.mean()
+```
+
+<img width="174" alt="image" src="https://github.com/Jeevapriya14/data-cleaning/assets/121003043/832735c8-a21b-4fe6-8ed4-b932ff886038">
+
+```
+df.TOTAL.fillna(mn,inplace=True)
+df.M4.fillna(mn,inplace=True)
+df.isnull()
+df
+```
+
+<img width="538" alt="image" src="https://github.com/Jeevapriya14/data-cleaning/assets/121003043/f85735cd-2c1c-4f91-838a-25db75ed203e">
+
+```
+df['cd']=pd.to_datetime(df['DOB'])
+df['cd']
+```
+
+<img width="175" alt="image" src="https://github.com/Jeevapriya14/data-cleaning/assets/121003043/af175242-8154-4c4d-8c95-231078b71a91">
+
+```
+df
+```
+
+<img width="675" alt="image" src="https://github.com/Jeevapriya14/data-cleaning/assets/121003043/16e9cd23-469e-4552-be60-2b0bf539fe4d">
+
 
 
